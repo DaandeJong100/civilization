@@ -1,0 +1,9 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$url := (joinStr "" " Placeholder for picture of gif to add into the embed ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Placeholder for title" "description" "Placeholder for description" }}
+{{ sendMessage nil $embed }}
+{{deleteTrigger 1}}

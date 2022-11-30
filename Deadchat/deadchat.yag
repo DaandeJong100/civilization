@@ -1,0 +1,23 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$logging := 1022195125822177380}}
+{{$deadchat := 1037847226078220399}}
+{{$channel := .Channel.ID}}
+{{/* 
+This is the deadchat command.
+When you run the command there are 2 option:
+No extra input which responds with a ping of the role and an excecution of the topic command
+With extra input which responds with a ping of the role and adds the text input by the user.
+*/}}
+{{if gt (len .Args) 1}}
+    {{mentionRoleID $deadchat}}
+    {{.CmdArgs}}
+    {{(sendMessage $logging (joinStr "" .User.Username " ran the deadchat command" ))}}
+{{else}}
+    {{ mentionRoleID $deadchat }}
+    {{ execAdmin "topic" }}
+    {{(sendMessage $logging (joinStr "" .User.Username " ran the deadchat command"))}}
+{{end}}

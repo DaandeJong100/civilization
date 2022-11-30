@@ -1,0 +1,34 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Assigning roles to yourself" "description" "In this server we require you to have both a gender role and an age role to make others feel more comfortable. If you have not unlocked full access to the server please check if you have both a gender and an age role. If you still did not get server access please click the checkmark below this message to run a check." }}
+{{ sendMessage nil $embed }}
+ 
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Please select your preferred pronouns" "description" ":carrot:<@&1021729635710550056>\n:avocado:<@&1021729506890887188>\n:squid:<@&1021729769894707220>\n:cherries:<@&1021729838094110800>\n:onion:<@&1021729908000567297>" }}
+{{ sendMessage nil $embed }}
+ 
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Please select your age range" "description" ":egg:<@&1022576836267479060>\n:hatching_chick:<@&1022576443210878996>\n:hatched_chick:<@&1022576504024076288>\n:baby_chick:<@&1022576536961957998>\n:rooster:<@&1022577136319606866>\n:poultry_leg:<@&1022577427517538315>" }}
+{{ sendMessage nil $embed }}
+ 
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Please select how people should handle your dm’s" "description" ":green_circle:<@&1022577662834778222>\n:orange_circle:<@&1022577675015049366>\n:red_circle:<@&1022577670539718737>" }}
+{{ sendMessage nil $embed }}
+ 
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Please select what pings you want to receive" "description" ":speaking_head:<@&1037847226078220399>\n:game_die:<@&1022433570423316520>\n:video_game:<@&1022433036463247440>\n:movie_camera:<@&1022432828761325578>\n:ear:<@&1022574077782806608>\n:new:<@&1043154035580088420>\n:busts_in_silhouette:<@&1043166167805734943>\n:birthday:<@&1043149740063326248>\n" }}
+{{ sendMessage nil $embed }}
+ 
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Please select what region you are from" "description" ":taco:<@&1022061134150373407>\n:woman_mage:<@&1022179314856378439>\n:full_moon_with_face: <@&1022061340136841236>\n:flag_ua: <@&1022066703921848362>\n:parking: <@&1022066601471778826>\n:whale: <@&1022178278343184384>\n:flag_gb: <@&1022067013780242476>\n:snake: <@&1022061812704882728>\n:earth_africa: <@&1022066357279404094>\n:frog: <@&1022066380788469791>\n:comet: <@&1022178827692150898>\n:purple_square: <@&1022066797899419761>\n:b: <@&1022066907446255636>\n:mount_fuji: <@&1022178512276295690>\n:banana: <@&1022178664240132106>\n" }}
+{{ sendMessage nil $embed }}
+ 
+{{$url := (joinStr "" "  https://cdn.discordapp.com/attachments/1038521123664580668/1041696065935654942/ezgif.com-gif-maker_6.gif ")}}
+{{ $embed := cembed "image" (sdict "url" $url) "color" 12525306 "title" "Please select some of your hobbies" "description" ":video_game:<@&1022431303502680074>\n:game_die: <@&1022433367100227626>\n:guitar: <@&1022431457790132254>\n:movie_camera: <@&1022431628351520778>\n:mountain: <@&1022431908514250762>\n:rat: <@&1022431990772944946>\n:woman_cook: <@&1022564747851350076>\n:art: <@&1022431763559100437>\n:camera: <@&1022432217533784064>\n:fishing_pole_and_fish: <@&1022432156804452393>\n:computer: <@&1022432229059739669>\n:book: <@&1022431542938718262>" }}
+{{ sendMessage nil $embed }}
+ 
+{{deleteTrigger 1}}

@@ -1,0 +1,16 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$user := .User.ID}}
+{{$example1 := 0000000000000000000}}
+{{$example2 := 0000000000000000000}}
+{{$example3 := 0000000000000000000}}
+{{$giveAcess := 0000000000000000000}}
+
+{{if hasRoleID $example1}}
+    {{if hasRoleID $example2}}
+        {{giveRoleID $user $giveAccess}}
+    {{else if hasRoleID $example3}}
+        {{giveRoleID $user $giveAccess}}

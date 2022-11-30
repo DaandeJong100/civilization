@@ -1,0 +1,15 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$channel := 1022195125822177380}}
+{{if eq (toInt (dbGet 2 "lockdown").Value) 0}}
+    {{dbSet 2 "lockdown" 1}}
+    Lockdown on
+    {{(sendMessage $channel (joinStr "" "Lockdown has been turned on by " .User.Username))}}
+{{else}}
+    {{dbDel 2 "lockdown" }}
+    Lockdown off 
+    {{(sendMessage $channel (joinStr "" "Lockdown has been turned off by " .User.Username))}}
+{{end}}

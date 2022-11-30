@@ -1,0 +1,16 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$url := (joinStr "" "https://cdn.discordapp.com/avatars/" (toString .User.ID) "/" .User.Avatar ".png")}}
+<@&1043154035580088420>
+{{ $embed := cembed "title" (joinStr "" "Welcome to the discord server!! " .User.Username  " You are member " .Guild.MemberCount )  "description" (joinStr "" "Please read the <#1025415003651707003> and assign yourself some <#1040962813771923547> " .User.Mention) "thumbnail" (sdict "url" $url) "color" 12525306 }}
+{{ sendMessage nil $embed }}
+{{/* 
+If you want to implement the lockdown part only please only copy the code below this comment.
+*/}}
+{{if (dbGet 2 "lockdown") }}
+    {{execAdmin "kick" (joinStr "" .User.ID) "Lockdown active"}}
+    Lockdown was active
+{{end}}

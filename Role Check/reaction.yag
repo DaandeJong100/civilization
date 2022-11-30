@@ -1,0 +1,83 @@
+{{/*
+	Copyright (c): Daan de Jong, 2022
+	License: MIT
+	Repository: https://github.com/DaandeJong100/civilization
+*/}}
+{{$user := .User.ID}}
+{{$giveStargazer := 732296537711050782}}
+{{$HeslashHim := 1021729635710550056}}
+{{$SheslashHer := 1021729506890887188}}
+{{$SheslashThem := 1021729908000567297}}
+{{$HeslashThem := 1021729838094110800}}
+{{$TheyslashThem := 1021729769894707220}}
+{{$18till22 := 1022576443210878996}}
+{{$23till26 := 1022576504024076288}}
+{{$27till30 := 1022576536961957998}}
+{{$30 := 1022577136319606866}}
+{{$40 := 1022577427517538315}}
+
+{{if hasRoleID $18till22}}
+    {{if hasRoleID $SheslashHer}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashHim}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $TheyslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $SheslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{end}}
+
+{{else if hasRoleID $23till26}}
+    {{if hasRoleID $SheslashHer}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashHim}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $TheyslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $SheslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{end}}
+
+{{else if hasRoleID $27till30}}
+    {{if hasRoleID $SheslashHer}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashHim}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $TheyslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $SheslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{end}}
+
+{{else if hasRoleID $30}}
+    {{if hasRoleID $SheslashHer}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashHim}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $TheyslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $SheslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{end}}
+
+{{else if hasRoleID $40}}
+    {{if hasRoleID $SheslashHer}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashHim}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $TheyslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $HeslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{else if hasRoleID $SheslashThem}}
+        {{giveRoleID $user $giveStargazer}}
+    {{end}}
+{{end}}
